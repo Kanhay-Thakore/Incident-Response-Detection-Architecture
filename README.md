@@ -2,7 +2,7 @@
 
 **Enterprise-Grade SIEM Implementation with Multi-Vector Threat Detection & File Integrity Monitoring**
 
-[![Project Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/yourusername/incident-response-detection)
+[![Project Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/Kanhay-Thakore/Incident-Response-Detection-Architecture/tree/main)
 [![SIEM Platform](https://img.shields.io/badge/SIEM-Wazuh-blue)](https://wazuh.com/)
 [![Detection Coverage](https://img.shields.io/badge/IoC%20Coverage-100%25-brightgreen)](#attack-simulation--detection)
 
