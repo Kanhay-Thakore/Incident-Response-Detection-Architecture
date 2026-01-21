@@ -33,7 +33,7 @@ Full-stack Security Operations Center implementation for **CSA271.com** combinin
 
 ### Network Topology
 
-![Network Architecture](images/Network%20Architecture%20&%20Lab%20Environment.png)
+![Network Architecture](images/NetworkArchitecture_&Lab_Environment.png)
 
 *Three-tier security lab with dedicated attacker, target, and SIEM nodes*
 
