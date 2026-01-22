@@ -523,9 +523,9 @@ Comprehensive documentation available:
 **[Kanhay Thakore]**  
 Security Operations | Incident Response | 
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/yourprofile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/yourusername)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/kanhaythakore/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/Kanhay-Thakore)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](thakorekanhay70@gmail.com)
 
 ---
 
