@@ -33,7 +33,7 @@ Full-stack Security Operations Center implementation for **CSA271.com** combinin
 
 ### Network Topology
 
-![Network Architecture](images/NetworkArchitecture_&Lab_Environment.png)
+![Network Architecture](images/Network_Architecture_&_Lab_Environment.png)
 
 *Three-tier security lab with dedicated attacker, target, and SIEM nodes*
 
@@ -214,7 +214,8 @@ Full-stack Security Operations Center implementation for **CSA271.com** combinin
 
 ### FIM Alert Example
 
-![FIM Alert](images/File%20Integrity%20Monitoring%20(FIM)_07.png)
+![FIM Alert](images/File_Integrity_Monitoring_(FIM)_01.png)
+![FIM Alert](images/File_Integrity_Monitoring_(FIM)_02.png)
 
 *Unauthorized modification to index.html detected with full hash comparison*
 
@@ -229,7 +230,7 @@ Full-stack Security Operations Center implementation for **CSA271.com** combinin
 **Image Size:** ~4GB RAM dump  
 **Format:** Raw memory (.dmp)
 
-![Memory Acquisition](images/dumpit-acquisition_02.png)
+![Memory Acquisition](images/dumpit_acquisition_02.png)
 
 ### Volatility Analysis Results
 
@@ -254,7 +255,8 @@ vol.py -f DESKTOP-memory.dmp windows.netscan
 - Validated SIEM agent functionality
 - Confirmed attack timeline through memory artifacts
 
-![Volatility Network Scan](images/volatility-netscan_02.png)
+![Volatility Network Scan](images/volatility_netscan_01.png)
+![Volatility Network Scan](images/volatility_netscan_02.png)
 
 *Network connection analysis revealing attack source and SIEM communication*
 
@@ -264,7 +266,8 @@ vol.py -f DESKTOP-memory.dmp windows.netscan
 
 ### Wazuh Dashboard
 
-![Wazuh Active Agents](images/wazuh-active-agents_01.png)
+![Wazuh Active Agents](images/wazuh_active_agents_01.png)
+![Wazuh Active Agents](images/wazuh_active_agents_02.png)
 
 *Real-time agent status showing IIS-Server connected and reporting*
 
@@ -280,62 +283,36 @@ vol.py -f DESKTOP-memory.dmp windows.netscan
 
 **Brute Force Detection:**
 
-![Brute Force Alert](images/hydra-attack_03.png)
+![Brute Force Alert](images/hydra_attack_01.png)
+![Brute Force Alert](images/hydra_attack_02.png)
+![Brute Force Alert](images/hydra_attack_03.png)
 
-*Multiple failed RDP login attempts triggering high-severity alert*
+<h3>Multiple failed RDP login attempts triggering high-severity alert<h3>
 
 **Network Scan Detection:**
 
-![SYN Scan Alert](images/nmap-syn-scan_03.png)
+![SYN Scan Alert](images/nmap_syn_scan_01.png)
+![SYN Scan Alert](images/nmap_syn_scan_02.png)
+![SYN Scan Alert](images/nmap_syn_scan_03.png)
 
-*Snort IDS alert correlated in Wazuh showing port scanning activity*
+<h3>Snort IDS alert correlated in Wazuh showing port scanning activity<h3>
 
----
+**TCP Connect Scan Detection:**  
 
-## 📁 Repository Structure
+![TCP Scan Alert](images/TCP_Scan_01.png)
+![TCP Scan Alert](images/TCP_Scan_02.png)
+![TCP Scan Alert](images/TCP_Scan_03.png)
 
-```
-incident-response-detection/
-├── docs/
-│   ├── setup-guide.md              # Step-by-step deployment
-│   ├── attack-simulation.md        # Attack commands & methodology
-│   ├── detection-rules.md          # Snort & Wazuh rule details
-│   └── forensics-analysis.md       # Volatility analysis workflow
-├── images/
-│   ├── Network Architecture & Lab Environment.png
-│   ├── ubuntu-netplan_03.png
-│   ├── ntp-sync_03.png
-│   ├── wazuh-install_02.png
-│   ├── wazuh-active-agents_01.png
-│   ├── Snort default config_02.png
-│   ├── Updating local rules_01.png
-│   ├── hydra-attack_01.png
-│   ├── hydra-attack_03.png
-│   ├── nmap-syn-scan_01.png
-│   ├── nmap-syn-scan_03.png
-│   ├── TCP Scan_01.png
-│   ├── TCP Scan_03.png
-│   ├── UDP Scan_01.png
-│   ├── UDP Scan_03.png
-│   ├── File Integrity Monitoring (FIM)_02.png
-│   ├── File Integrity Monitoring (FIM)_05.png
-│   ├── File Integrity Monitoring (FIM)_07.png
-│   ├── dumpit-acquisition_02.png
-│   └── volatility-netscan_02.png
-├── configs/
-│   ├── snort/
-│   │   ├── snort.conf             # Snort configuration
-│   │   └── local.rules            # Custom detection rules
-│   └── wazuh/
-│       └── ossec.conf             # Wazuh agent configuration
-├── scripts/
-│   ├── deploy-lab.sh              # Automated lab setup
-│   └── attack-simulation.sh       # Automated attack runner
-├── reports/
-│   └── Final_Report_Group6.pdf    # Complete technical report
-└── README.md
-```
+<h3>Centralized detection and correlation of TCP scanning activity showing full connection attempts in SIEM dashboard<h3>
 
+
+**UDP Scan Detection:**
+
+![UDP Scan Alert](images/UDP_Scan_01.png)
+![UDP Scan Alert](images/UDP_Scan_02.png)
+![UDP Scan Alert](images/UDP_Scan_03.png)
+
+<h3>Real-time UDP port scan detection and alerting by Snort IDS with packet analysis<h3>
 ---
 
 ## 🚀 Quick Start
@@ -364,7 +341,7 @@ incident-response-detection/
 # No DHCP - Static IPs only
 ```
 
-![Network Setup](images/ubuntu-netplan_03.png)
+![Network Setup](images/ubuntu_netplan_03.png.png)
 
 **2. Deploy Wazuh SIEM**
 
@@ -377,7 +354,7 @@ sudo bash wazuh-install.sh -a
 # Credentials provided after installation
 ```
 
-![Wazuh Installation](images/wazuh-install_02.png)
+![Wazuh Installation](images/Wazuh_install_02.png)
 
 **3. Install Snort IDS**
 
@@ -388,7 +365,9 @@ sudo bash wazuh-install.sh -a
 # Deploy custom rules to C:\Snort\rules\local.rules
 ```
 
-![Snort Configuration](images/Snort%20default%20config_02.png)
+![Snort Configuration](images/Snort_default_config_01.png)
+![Snort Configuration](images/Snort_default_config_02.png)
+![Snort Configuration](images/Updating_local_rules_01.png)
 
 **4. Configure NTP Synchronization**
 
@@ -400,7 +379,7 @@ sudo timedatectl set-ntp true
 w32tm /config /manualpeerlist:"pool.ntp.org" /syncfromflags:manual /reliable:yes /update
 ```
 
-![NTP Sync](images/ntp-sync_03.png)
+![NTP Sync](images/ntp_sync_03.png.png)
 
 **5. Deploy Wazuh Agent**
 
@@ -411,7 +390,8 @@ w32tm /config /manualpeerlist:"pool.ntp.org" /syncfromflags:manual /reliable:yes
 # Start wazuh-agent service
 ```
 
-![Active Agents](images/wazuh-active-agents_01.png)
+![Active Agents](images/wazuh_active_agents_01.png)
+![Active Agents](images/wazuh_active_agents_02.png)
 
 **6. Run Attack Simulations**
 
@@ -515,17 +495,13 @@ Check Wazuh dashboard for alerts in real-time at `https://10.10.1.10`
 
 Comprehensive documentation available:
 
-- **[Setup Guide](docs/setup-guide.md)** - Complete deployment instructions
-- **[Attack Simulation](docs/attack-simulation.md)** - Attack commands and expected results
-- **[Detection Rules](docs/detection-rules.md)** - Snort & Wazuh rule documentation
-- **[Forensics Analysis](docs/forensics-analysis.md)** - Volatility analysis methodology
 - **[Technical Report](reports/Final_Report_Group6.pdf)** - Full project documentation
 
 ---
 
 ## 🎓 Project Context
 
-**Course:** CST8808 - Security Operations  
+**Course:** CST8808 - CST8808 - Cyber Incident Response & Security Operations  
 **Institution:** Algonquin College  
 **Semester:** Winter 2025  
 **Objective:** Design and test Incident Response plan for CSA271.com
@@ -544,8 +520,8 @@ Comprehensive documentation available:
 
 ## 📧 Contact
 
-**[Your Name]**  
-Security Operations | Incident Response | Digital Forensics
+**[Kanhay Thakore]**  
+Security Operations | Incident Response | 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/yourprofile)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/yourusername)
