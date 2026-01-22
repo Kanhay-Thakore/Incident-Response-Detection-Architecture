@@ -213,11 +213,15 @@ Full-stack Security Operations Center implementation for **CSA271.com** combinin
 - ✅ Timestamp correlation
 
 ### FIM Alert Example
+<h3> Before Editing the file, it was empty. </h3>
 
 ![FIM Alert](images/File_Integrity_Monitoring_(FIM)_01.png)
+
+<h3>Results after editing the file, we can see that the size went from '0' to '33' </h3>
+
 ![FIM Alert](images/File_Integrity_Monitoring_(FIM)_02.png)
 
-*Unauthorized modification to index.html detected with full hash comparison*
+<h3>Unauthorized modification to index.html detected with full hash comparison<h3>
 
 ---
 
@@ -525,7 +529,7 @@ Security Operations | Incident Response |
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/kanhaythakore/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/Kanhay-Thakore)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](thakorekanhay70@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:thakorekanhay70@gmail.com)
 
 ---
 
